@@ -9,7 +9,7 @@ import axios from 'axios';
 function App() {
   const [datas, setDatas] = useState([]);
   const fetchEmployesData = () =>{
-		axios.get(`/api/`).then((response)=>{
+		axios.get(`https://employe-management-system-backend.onrender.com/api/`).then((response)=>{
       setDatas(response.data)
     }, (error)=>{
       console.log(error)
@@ -20,14 +20,14 @@ function App() {
 	}, [])
 
   const updateEmployesData = (updatedEmployeData)=>{
-    axios.put(`/api/${updatedEmployeData.employeId}`, updatedEmployeData).then((reponse)=>{
+    axios.put(`https://employe-management-system-backend.onrender.com/api/${updatedEmployeData.employeId}`, updatedEmployeData).then((reponse)=>{
       console.log(reponse)
     }, (error)=>{
       console.log(error)
     })
   }
   const addEmployesData = (addRow)=>{
-    axios.post(`/api/create`, addRow).then((reponse)=>{
+    axios.post(`https://employe-management-system-backend.onrender.com/api/create`, addRow).then((reponse)=>{
       console.log(reponse)
     }, (error)=>{
       console.log(error)
@@ -35,7 +35,7 @@ function App() {
   }
 
   const deleteEmploye = (employeId) =>{
-    axios.delete(`/api/${employeId}`).then((reponse)=>{
+    axios.delete(`https://employe-management-system-backend.onrender.com/api/${employeId}`).then((reponse)=>{
       console.log(reponse)
     }, (error)=>{
       console.log(error)
