@@ -1,0 +1,57 @@
+.tableRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width : 80vw;
+    height: 5vh;
+    border: 1px solid black ;
+}
+.tableCell{
+    width: 15vw;
+    height:5vh;
+    display: flex;
+    padding: 0 1vw 0 1vw;
+    align-items: center;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.tableCell-action{
+    height:5vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    
+}
+.tableHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width : 80vw;
+    height: 5vh;
+    border: 1px solid black ;
+}
+.tableHeaderCell{
+    width: 15vw;
+    height:5vh;
+    display: flex;
+    padding: 0 1vw 0 1vw;
+    align-items: center;
+    border: 1px solid black;
+    color:white;
+    background-color: rgb(15, 118, 253);
+    font-weight: 800;
+}
+.tableHeaderCell-action{
+    width: 17.2vw;
+    height:5vh;
+    display: flex;
+    padding: 0 1vw 0 1vw;
+    align-items: center;
+    border: 1px solid black;
+    color:white;
+    background-color: rgb(15, 118, 253);
+    font-weight: 800;
+}

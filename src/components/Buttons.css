@@ -1,0 +1,19 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:4vw;
+    height:3vh;
+    color:white;
+    border-radius: 5px;
+    margin: 0 0.2vw 0 0.2vw;
+    font-size: 0.85vw;
+    padding: 0.1vw;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: white !important;
+    border: 1px solid black;
+    color: black;
+}
