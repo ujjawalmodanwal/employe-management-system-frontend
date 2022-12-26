@@ -71,6 +71,7 @@ function App() {
   return (
     <div className="App">
       <h1>Employe List</h1>
+      <h3>Total Employees: {datas.length}</h3>
       <div className='main-section'>
         <AddButton handleAddNewRow = {handleAddNewRow}/>
         <Table datas = {datas} handleDataUpdate = {handleDataUpdate} handleDeleteRow = {handleDeleteRow}/>
